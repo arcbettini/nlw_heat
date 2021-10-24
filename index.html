@@ -22,60 +22,46 @@
       <div class="content">
         <div class="avatar">
           <span>
-            <img src="assets/build.svg" alt="selo nlw heat" />
+            <img src="images/build.svg" alt="selo nlw heat" />
           </span>
 
-          <img src="/assets/images/perfil.jpg" alt="foto pessoal" />
+          <img id="userPhoto" src="images/build.svg" alt="foto pessoal" />
         </div>
 
-        <h1 id="userName">Álan Bettini</h1>
-        <a href="https://github.com/maykbrito" target="_blank">
-          <img src="/assets/github 2.svg" alt="icone Github" />
-          arcbettini</a
+        <h1 id="userName">Mayk Brito</h1>
+        <a id="userLink" href="https://github.com/maykbrito" target="_blank">
+          <img src="images/github.svg" alt="icone Github" />
+          <span id="userLogin">substituir</span></a
         >
-        <p>A lawyer focused on changing his life</p>
+        <p id="userBio">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
+          provident, asperiores illo incidunt quaerat v
+        </p>
 
         <ul id="socialLinks">
           <li class="youtube">
             <a href="https://youtube.com/maykbrito" target="_blank">
-              <img src="/assets/youtube.svg" alt="logo yotube" />
+              <img src="images/youtube.svg" alt="logo yotube" />
             </a>
           </li>
           <li class="instagram">
             <a href="https://instagram.com/maykbrito" target="_blank">
-              <img src="/assets/instagram.svg" alt="logo instagram" />
+              <img src="images/instagram.svg" alt="logo instagram" />
             </a>
           </li>
           <li class="facebook">
             <a href="https://facebook.com/maykbrito" target="_blank">
-              <img src="/assets/facebook.svg" alt="logo facebook" />
+              <img src="images/facebook.svg" alt="logo facebook" />
             </a>
           </li>
           <li class="twitter">
             <a href="https://twitter.com/maykbrito" target="_blank">
-              <img src="/assets/twitter.svg" alt="logo twitter" />
+              <img src="images/twitter.svg" alt="logo twitter" />
             </a>
           </li>
         </ul>
       </div>
     </main>
-    <script>
-      const socialMediaUser = {
-        github: 'arcbettini',
-        youtube: 'channel/UC8qjvK1gtpbX7f7ZFE-1Hcg',
-        instagram: 'alan_bettini',
-        facebook: 'alanbettini',
-        twitter: 'alan_bettini'
-      }
-
-      function changeSocialMediaUser() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute('class')
-          li.children[0].href = `https://${social}.com/${socialMediaUser[social]}`
-        }
-      }
-
-      changeSocialMediaUser()
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
